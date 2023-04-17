@@ -1,0 +1,9 @@
+
+$primary-color: #8fc5e4;
+$secondary-color: #83488B;
+
+@mixin desktop() {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
