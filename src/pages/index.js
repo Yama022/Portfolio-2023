@@ -1,9 +1,8 @@
 import Head from "next/head";
-import logo from "../../public/logo.png";
-import Image from "next/image";
 import styles from "@/styles/Home.module.scss";
-import Link from "next/link";
+
 import About from "./about";
+import Header from "./header";
 import Footer from "./footer";
 
 export default function Home() {
@@ -17,47 +16,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-        <div className={styles.header}>
-          <div className={styles.header__logo}>
-            <Image src={logo} width={50} height={50} />
-          </div>
-
-          <div className={styles.header__nav}>
-            <Link
-              href="/about"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>About</h2>
-            </Link>
-            <Link
-              href="/experience"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>Experience</h2>
-            </Link>
-            <Link
-              href="/project"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>Project</h2>
-            </Link>
-            <Link
-              href="/contact"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>Contact</h2>
-            </Link>
-          </div>
-        </div>
-
+        <Header />
         <div className={styles.main}>
           <About />
         </div>
