@@ -17,8 +17,11 @@ const FooterComponent = () => {
         <div className={styles.footer__container__right}>
           <h4>Follow me</h4>
           <div className={styles.footer__container__right__social}>
-            <a href="https://www.linkedin.com/in/remi-jacquemin-5b1b3b1b3/">
-              moi
+            <a href="https://www.linkedin.com/in/remi-jacquemin" target='_blank'>
+              Linkedin
+            </a>
+            <a href="https://www.github.com/Yama022" target='_blank'>
+              Github
             </a>
           </div>
         </div>
