@@ -6,9 +6,12 @@ import Footer from "./footer";
 
 const ExpComponent = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
-      <h1>Experience</h1>
+      <div className="styles__experience">
+        <h1>Experience</h1>
+
+      </div>
 
       <Footer />
     </div>

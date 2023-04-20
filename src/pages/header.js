@@ -8,7 +8,9 @@ const HeaderComponent = () => {
   return (
 <div className={styles.header}>
           <div className={styles.header__logo}>
-            <Image src={logo} width={50} height={50} />
+            <a href="/">
+              <Image src={logo} width={50} height={50} />
+            </a>
           </div>
 
           <div className={styles.header__nav}>
