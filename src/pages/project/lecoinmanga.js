@@ -4,15 +4,15 @@ import Header from "../header";
 import Footer from "../footer";
 
 
-const Project1 = () => {
+const LeCoinManga = () => {
   return (
     <div className={styles.projectContent}>
       <Header />
-      <h1>Project Explorastro</h1>
+      <h1>Le Coin Manga</h1>
 
       <Footer />
     </div>
   );
 };
 
-export default Project1;
+export default LeCoinManga;

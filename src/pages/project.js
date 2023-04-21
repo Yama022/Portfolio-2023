@@ -46,7 +46,7 @@ const ProjectComponent = () => {
         </div>
 
         <div className={styles.project__list__item}>
-          <Link href="/project/explorastro" style={{ textDecoration: 'none' }}>
+          <Link href="/project/lecoinmanga" style={{ textDecoration: 'none' }}>
             <div className={styles.project__list__item__container}>
               <div className={styles.project__list__item__container__image}>
                 <Image
