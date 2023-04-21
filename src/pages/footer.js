@@ -27,7 +27,7 @@ const FooterComponent = () => {
         </div>
 
       </div>
-      <h3>© 2021 Remi Jacquemin</h3>
+      <h3>© 2023 Remi Jacquemin</h3>
     </div>
   );
 };
