@@ -38,8 +38,8 @@ const ProjectComponent = () => {
               </div>
               <div className={styles.project__list__item__container__content}>
                 <h2>Explorastro</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus possimus reiciendis, magni eaque ut nisi reprehenderit vel ullam aliquam? Modi minus soluta ex neque provident non iusto nobis, rem quod.
-                At et quam obcaecati voluptas quas vel natus, iure velit voluptate, repudiandae saepe veniam dolorem pariatur non, molestias consequuntur! Voluptates ad id numquam amet neque sunt repellendus harum molestiae doloremque.</p>
+                <p>ExplorAstro is a social network for astronomy enthusiasts. 
+                  Organize and join exploration created by the community. This project was realized during "L'Apothéose" at o'Clock. In total, we are 4 developers actively working on the project.</p>
               </div>
             </div>
           </Link>
@@ -62,8 +62,7 @@ const ProjectComponent = () => {
               </div>
               <div className={styles.project__list__item__container__content}>
                 <h2>LeCoinManga</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eaque enim placeat aperiam vero est eius repellendus ullam perspiciatis ex corporis reiciendis iure fuga repellat facere hic, iusto itaque tempore?
-                Iusto voluptates veniam officiis facere asperiores corporis et voluptas distinctio vero quidem necessitatibus laborum neque aliquid hic totam molestias architecto quis, eaque, sunt corrupti dolorem. Consequatur rerum aspernatur quidem esse.</p>
+                <p>LeCoinManga is a web application, in the spirit of the well-known classifieds site, LeCoinManga allows its users to post manga ads.</p>
               </div>
             </div>
           </Link>
