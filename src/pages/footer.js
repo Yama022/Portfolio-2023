@@ -1,4 +1,6 @@
 import React from 'react';
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
+import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import styles from "@/styles/Home.module.scss";
 
 const FooterComponent = () => {
@@ -9,8 +11,7 @@ const FooterComponent = () => {
         <div className={styles.footer__container__left}>
           <h4>Remi Jacquemin</h4>
           <p>
-            1 rue de la paix <br />
-            75000 Paris
+          My experience in front-end development has allowed me to refine my attention to detail and create innovative user interfaces that meet user needs and are a pleasure to use.
           </p>
         </div>
 
@@ -18,9 +19,15 @@ const FooterComponent = () => {
           <h4>Follow me</h4>
           <div className={styles.footer__container__right__social}>
             <a href="https://www.linkedin.com/in/remi-jacquemin" target='_blank'>
+              <span>
+                <AiFillLinkedin />
+              </span>
               Linkedin
             </a>
             <a href="https://www.github.com/Yama022" target='_blank'>
+              <span>
+                <AiFillGithub />
+              </span>
               Github
             </a>
           </div>

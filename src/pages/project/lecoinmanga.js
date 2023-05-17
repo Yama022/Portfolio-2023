@@ -8,7 +8,9 @@ const LeCoinManga = () => {
   return (
     <div className={styles.projectContent}>
       <Header />
-      <h1>Le Coin Manga</h1>
+      <div className={styles.projectContent__container}>
+        <h1>Project Le Coin Manga</h1>
+      </div>
 
       <Footer />
     </div>

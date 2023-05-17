@@ -7,7 +7,6 @@ import Footer from "./footer";
 
 import mac from "../../public/mac.png";
 import explorastro from "../../public/explorastro.png";
-// import explorastro from "../../public/apple.jpg";
 import lecoinmanga from "../../public/lecoinmanga.png";
 
 const ProjectComponent = () => {
