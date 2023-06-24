@@ -17,4 +17,5 @@ const LeCoinManga = () => {
   );
 };
 
+
 export default LeCoinManga;
