@@ -6,48 +6,48 @@ import Link from "next/link";
 
 const HeaderComponent = () => {
   return (
-<div className={styles.header}>
-          <div className={styles.header__logo}>
-            <a href="/">
-              <Image src={logo} width={50} height={50} />
-            </a>
-          </div>
+  <div className={styles.header}>
+    <div className={styles.header__logo}>
+      <a href="/">
+        <Image src={logo} width={50} height={50} />
+      </a>
+    </div>
 
-          <div className={styles.header__nav}>
-            <Link
-              href="/"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>About</h2>
-            </Link>
-            <Link
-              href="/experience"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>Experience</h2>
-            </Link>
-            <Link
-              href="/project"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>Project</h2>
-            </Link>
-            <Link
-              href="/contact"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <h2>Contact</h2>
-            </Link>
-          </div>
-        </div>
+    <div className={styles.header__nav}>
+      <Link
+        href="/"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <h2>About</h2>
+      </Link>
+      <Link
+        href="/experience"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <h2>Experience</h2>
+      </Link>
+      <Link
+        href="/project"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <h2>Project</h2>
+      </Link>
+      <Link
+        href="/contact"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        <h2>Contact</h2>
+      </Link>
+    </div>
+  </div>
   );
 };
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Dosis:wght@200;400;700&family=Tangerine&display=swap');
 
+$accent-color: #E41A21;
+$secondary-light-color: #c3d8d7;
 
 body {
   width: 100%;
@@ -9,8 +11,10 @@ body {
   font-family: 'Dosis', sans-serif;
   user-select: none;
   // background-image: linear-gradient(to right bottom, #72c9b9, #74c9d5, #8fc5e4, #b1c0e4, #cbbdda);
+  /* Pour Firefox */
+  scrollbar-width: thin; /* "thin" ou une valeur en px comme "12px" */
+  scrollbar-color: rgba($accent-color, 0.7) $secondary-light-color;
 }
-
 
 h1 {
   color: black;
@@ -24,3 +28,23 @@ p {
   font-weight: 400;
   line-height: 1.5;
 }
+
+// /* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $secondary-light-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba($accent-color, 0.7); // 70% d'opacité
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $accent-color;
+}
+
+
