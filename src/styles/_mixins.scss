@@ -1,6 +1,11 @@
 
 $primary-color: #8fc5e4;
+$accent-color: #E41A21;
+$accent-color-reverse: #EA474D;
 $secondary-color: #83488B;
+$secondary-light-color: #c3d8d7;
+$secondary-black-color: #055250;
+
 
 @mixin desktop() {
   @media (max-width: 600px) {
