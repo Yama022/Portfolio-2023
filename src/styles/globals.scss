@@ -10,8 +10,6 @@ body {
   padding: 0;
   font-family: 'Dosis', sans-serif;
   user-select: none;
-  // background-image: linear-gradient(to right bottom, #72c9b9, #74c9d5, #8fc5e4, #b1c0e4, #cbbdda);
-  /* Pour Firefox */
   scrollbar-width: thin; /* "thin" ou une valeur en px comme "12px" */
   scrollbar-color: rgba($accent-color, 0.7) $secondary-light-color;
 }
@@ -29,7 +27,7 @@ p {
   line-height: 1.5;
 }
 
-// /* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
+/* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
   width: 10px;
 }
