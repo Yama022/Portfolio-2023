@@ -23,20 +23,20 @@ const HeaderComponent = () => {
         <h2>About</h2>
       </Link>
       <Link
-        href="/experience"
+        href="/experiences"
         style={{
           textDecoration: "none",
         }}
       >
-        <h2>Experience</h2>
+        <h2>Experiences</h2>
       </Link>
       <Link
-        href="/project"
+        href="/projects"
         style={{
           textDecoration: "none",
         }}
       >
-        <h2>Project</h2>
+        <h2>Projects</h2>
       </Link>
       <Link
         href="/contact"

@@ -7,8 +7,9 @@ const ExpComponent = () => {
   return (
     <div className={styles.experience}>
       <Header />
-
-      <h1 className={styles.experience__title}>Works Experiences</h1>
+      <div className={styles.experience__title}>
+        <h1>Works Experiences</h1>
+      </div>
 
       {/* Expérience : L'Oréal Projet : Lot n°2 */}
       <div className={styles.experience__item}>

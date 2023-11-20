@@ -19,7 +19,7 @@ const ProjectComponent = () => {
     
 
       <div className={styles.project__title}>
-        <h1>Projects</h1>
+        <h1>My Projects</h1>
       </div>
       <div className={styles.project__list}>
         <div className={styles.project__list__item}>
