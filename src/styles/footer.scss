@@ -1,5 +1,5 @@
 .footer {
-  // position: sticky;
+  position: sticky;
   bottom: 0;
   width: 100%;
   min-height: 13vh;
@@ -17,7 +17,6 @@
     &__left {
       width: 70%;
       p {
-        // text-align: center;
         width: 70%;
       }
     }

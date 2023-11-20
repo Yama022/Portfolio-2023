@@ -6,8 +6,11 @@ import Footer from "./footer";
 
 const ContactComponent = () => {
   return (
+    <div className="container">
+      <div className="container__header">
+        <Header />
+      </div>
     <div className={styles.contact}>
-      <Header />
 
       <div className={styles.contactHeader}>
         <h1>Contact</h1>
@@ -28,27 +31,15 @@ const ContactComponent = () => {
             <label htmlFor="message">Message</label>
             <textarea id="message" rows="5" placeholder="Votre message"></textarea>
           </div>
-          <button type="submit">Envoyer</button>
+          <button type="submit" className="button">Envoyer</button>
         </form>
       </div>
 
-      <div className={styles.contactDetails}>
-        <h2>Mes coordonnées</h2>
-        <p>Email : exemple@email.com</p>
-        <p>Téléphone : +33 1 23 45 67 89</p>
-      </div>
+    </div>
 
-      <div className={styles.socialLinks}>
-        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-      </div>
-
-      <div className={styles.location}>
-        {/* Si vous avez une carte intégrée, vous pouvez la placer ici */}
-      </div>
-
+    <div className="container__footer">
       <Footer />
+    </div>
     </div>
   );
 };

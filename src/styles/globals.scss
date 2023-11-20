@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Dosis:wght@200;400;700&family=Tangerine&display=swap');
 
 $accent-color: #E41A21;
+$accent-color-reverse: #EA474D;
 $secondary-light-color: #c3d8d7;
 
 body {
@@ -10,12 +11,22 @@ body {
   padding: 0;
   font-family: 'Dosis', sans-serif;
   user-select: none;
-  scrollbar-width: thin; /* "thin" ou une valeur en px comme "12px" */
+  scrollbar-width: thin;
   scrollbar-color: rgba($accent-color, 0.7) $secondary-light-color;
 }
 
+.container {
+  min-height: 100%;
+  &__header {}
+  &__footer {
+    width: 100%;
+    // position: fixed;
+    bottom: 0;
+  }
+}
+
 h1 {
-  color: red;
+  color: $accent-color;
   font-size: 3em;
   font-weight: 700;
   line-height: 1.2;
@@ -23,12 +34,34 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Archivo', sans-serif;
-  // font-size: 1.2rem;
 }
 
 p {
   font-weight: 400;
   line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 3em;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: $accent-color;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    letter-spacing: 1px;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba($accent-color-reverse, 0.2);
+    cursor: pointer;
+    color: $accent-color-reverse;
+    background-color: white;
+    border: 2px solid $accent-color-reverse;
+  }
 }
 
 /* Pour les navigateurs basés sur WebKit (Chrome, Safari, etc.) */

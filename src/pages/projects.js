@@ -11,12 +11,11 @@ import lecoinmanga from "../../public/lecoinmanga.png";
 
 const ProjectComponent = () => {
   return (
-    <div className="styles__container">
-      <Header />
-
+    <div className="container">
+      <div className="container__header">
+        <Header />
+      </div>
     <div className={styles.project}>
-
-    
 
       <div className={styles.project__title}>
         <h1>My Projects</h1>
@@ -95,7 +94,10 @@ const ProjectComponent = () => {
       </div>
 
     </div>
+    
+    <div className="container__footer">
       <Footer />
+    </div>
     </div>
   );
 };

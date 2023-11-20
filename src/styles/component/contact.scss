@@ -1,7 +1,8 @@
 .contact {
   width: 100%;
+  min-height: 74.6vh;
 
-  h1, h2 {
+  h2 {
     color: $primary-color;
     text-align: center;
     margin-bottom: 1.5em;
@@ -19,6 +20,8 @@
 
   .contactForm {
     form {
+      width: 75%;
+      margin: auto;
       display: flex;
       flex-direction: column;
       gap: 1em;
@@ -46,51 +49,9 @@
 
       button {
         align-self: center;
-        padding: 1em 2em;
-        background-color: $accent-color;
-        border: none;
-        border-radius: 10px;
-        color: white;
-        font-size: 1.2em;
-        cursor: pointer;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-        &:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 3px 10px rgba($accent-color-reverse, 0.2);
-        }
       }
     }
   }
 
-  .contactDetails {
-    margin: 3em 0;
-
-    p {
-      text-align: center;
-      font-size: 1.2em;
-    }
-  }
-
-  .socialLinks {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-
-    a {
-      color: $primary-color;
-      font-size: 1.3em;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: $accent-color;
-      }
-    }
-  }
-
-  .location {
-    margin-top: 3em;
-
-    // Add styles for your map embed if you include one
-  }
 }
