@@ -1,6 +1,8 @@
 .contact {
   width: 100%;
   min-height: 74.6vh;
+  padding-top: 7%;
+  background-color: #0A0A0A;
 
   h2 {
     color: $primary-color;
@@ -14,13 +16,13 @@
     margin-bottom: 1em;
   }
 
-  .contactHeader {
+  &__header {
     margin-bottom: 2em;
   }
 
-  .contactForm {
+  &__form {
     form {
-      width: 75%;
+      width: 60%;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -33,6 +35,7 @@
 
         label {
           font-weight: bold;
+          color: white;
         }
 
         input, textarea {
@@ -40,6 +43,7 @@
           border: 1px solid $secondary-light-color;
           border-radius: 5px;
           font-size: 1em;
+          background-color: #0A0A0A;
         }
 
         textarea {
@@ -48,10 +52,20 @@
       }
 
       button {
+        margin-top: 2%;
         align-self: center;
 
       }
     }
+  }
+
+  &__calendly {
+    // border: 1px solid $secondary-light-color;
+    width: 60%;
+    // height: 100px;
+    margin: auto;
+    margin-top: 2em;
+    margin-right: 21%;
   }
 
 }

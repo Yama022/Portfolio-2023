@@ -1,74 +1,4 @@
 
-// .experience {
-//   width: 100%;
-//   background-color: #0A0A0A;
-//   padding-top: 7%;
-//   z-index: 5;
-//   min-height: 100vh;
-//   padding-bottom: 3rem;
-
-//   &__title {
-//     color: #FCFCFA;
-//   }
-
-//   &__item {
-//     display: flex;
-//     flex-direction: column;
-//     margin: 2rem auto;
-//     padding: 1rem;
-//     border: 2px solid #2B2B2B;
-//     border-radius: 24px;
-//     width: 40%;
-//     background-color: rgba(13, 13, 13, 0.8);
-//     // max-width: 600px;
-//     padding: 0 2rem;
-//     // box-shadow: 0 4px 8px 0 rgba(228, 26, 33, 0.1), 0 6px 20px 0 rgba(228, 26, 33, 0.1);
-  
-//     @media (min-width: 768px) {
-//       width: 75%;
-//       .experience__image {
-//         float: left;
-//         margin-right: 20px; 
-//       }
-//     }
-  
-//     @media (min-width: 1024px) {
-//       width: 50%;
-//     }
-  
-//     header {
-//       margin-bottom: 1rem;
-//     }
-
-//     &__date {
-//       color: #FCFCFA;
-//     }
-  
-//     &__date, &__tech, &__desc p {
-//       margin-top: 0.5rem;
-
-//       em {
-//         font-style: italic;
-//         color: #FCFCFA;
-//         margin-left: .5%;
-//       }
-
-//       span {
-//         display: block;
-//         margin-left: 1%;
-        
-//       }
-//     }
-  
-//     &__desc {
-//       text-align: left;
-//     }
-//   }
-
-
-// }
-
-
 .experience {
   width: 100%;
   background-color: #0A0A0A;
@@ -86,8 +16,8 @@
     border-radius: 24px;
     width: 40%;
     background-color: rgba(13, 13, 13, 0.8);
-    position: relative; // Important pour le pseudo-élément
-    overflow: hidden; // Contient le débordement du gradient
+    position: relative;
+    overflow: hidden;
 
     // Gradient light effect starting from outside the top-right corner
     &::before {

@@ -1,7 +1,7 @@
 .projectContent {
   width: 100%;
-  // min-height: 80vh;
-  border: 1px solid black;
+  padding-top: 7%;
+  background-color: #0A0A0A;
   &__container {
     display: flex;
     flex-direction: column;
@@ -29,18 +29,41 @@
       width: 50%;
       height: 100%;
       position: relative;
+      z-index: 0;
+    
+      // Applique le flou aux bordures via ::before
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px; // Ajuste selon la forme souhaitée
+        background: inherit; // Prend l'image en fond
+        filter: blur(15px); // Ajuste l'intensité du flou
+        z-index: 1; // Place le ::before derrière l'image
+        opacity: 0.6; // Ajuste l'opacité pour un effet plus subtil
+      }
+    
       &__contain {
         position: absolute;
-        width: 95%;
-        height: 66%;
-        top: 3%;
-        left: 2%;
+        width: 87%;
+        height: 60.3%;
+        top: 8%;
+        left: 6.5%;
+        overflow: hidden; // Empêche le débordement du flou à l'intérieur
+        z-index: 5; // Place l'image au-dessus du flou
       }
+    
       img {
         width: 100%;
         height: 100%;
+        position: relative;
+        z-index: 3; // Image au-dessus du flou
       }
     }
+    
     &__content {
       border: 1px solid black;
       width: 50%;
@@ -50,7 +73,11 @@
         border: 1px solid red;
       }
       &__techno {
-        border: 1px solid blue;
+        overflow: hidden;
+        &__slider {
+          display: flex;
+          animation: marquee 10s linear infinite;
+        }
       }
     }
   }
