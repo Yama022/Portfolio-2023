@@ -15,18 +15,20 @@ body {
   scrollbar-color: rgba($accent-color, 0.7) $secondary-light-color;
 }
 
+
 .container {
-  min-height: 100%;
-  &__header {}
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(10, 10, 10, 0.8);
+  }
   &__footer {
-    width: 100%;
-    // position: fixed;
-    bottom: 0;
   }
 }
 
-h1 {
-  color: $accent-color;
+h2 {
+  color: #FCFCFA;
   font-size: 3em;
   font-weight: 700;
   line-height: 1.2;
@@ -36,9 +38,18 @@ h1 {
   font-family: 'Archivo', sans-serif;
 }
 
+h3 {
+  color: #FCFCFA;
+  font-size: 1.7em;
+  font-family: 'Archivo', sans-serif;
+}
+
 p {
+  color: #535353;
   font-weight: 400;
   line-height: 1.5;
+  font-size: 1.5em;
+  font-style: italic;
 }
 
 .button {
@@ -74,7 +85,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba($accent-color, 0.7); // 70% d'opacité
+  background: rgba($accent-color, 0.7); 
   border-radius: 6px;
 }
 

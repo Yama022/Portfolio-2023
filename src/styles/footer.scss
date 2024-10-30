@@ -3,8 +3,10 @@
   bottom: 0;
   width: 100%;
   min-height: 13vh;
-  background-color: #000000;
+  background-color: #0A0A0A;
   color: white;
+  border-top: 1px solid white;
+  z-index: 5;
   &__container{
     display: flex;
     justify-content: space-between;

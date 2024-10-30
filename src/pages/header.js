@@ -20,7 +20,7 @@ const HeaderComponent = () => {
           textDecoration: "none",
         }}
       >
-        <h2>About</h2>
+        <h3>About</h3>
       </Link>
       <Link
         href="/experiences"
@@ -28,7 +28,7 @@ const HeaderComponent = () => {
           textDecoration: "none",
         }}
       >
-        <h2>Experiences</h2>
+        <h3>Experiences</h3>
       </Link>
       <Link
         href="/projects"
@@ -36,7 +36,7 @@ const HeaderComponent = () => {
           textDecoration: "none",
         }}
       >
-        <h2>Projects</h2>
+        <h3>Projects</h3>
       </Link>
       <Link
         href="/contact"
@@ -44,7 +44,7 @@ const HeaderComponent = () => {
           textDecoration: "none",
         }}
       >
-        <h2>Contact</h2>
+        <h3>Contact</h3>
       </Link>
     </div>
   </div>

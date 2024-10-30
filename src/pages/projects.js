@@ -18,7 +18,7 @@ const ProjectComponent = () => {
     <div className={styles.project}>
 
       <div className={styles.project__title}>
-        <h1>My Projects</h1>
+        <h2>My Projects</h2>
       </div>
       <div className={styles.project__list}>
         <div className={styles.project__list__item}>

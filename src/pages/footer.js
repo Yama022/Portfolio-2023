@@ -11,7 +11,6 @@ const FooterComponent = () => {
         <div className={styles.footer__container__left}>
           <h4>Remi Jacquemin</h4>
           <p>
-          {/* My experience in front-end development has allowed me to refine my attention to detail and create innovative user interfaces that meet user needs and are a pleasure to use. */}
           React front-end developer
           </p>
           <p>Paris - Ile de France</p>
@@ -36,7 +35,7 @@ const FooterComponent = () => {
         </div>
 
       </div>
-      <h3>© 2023 Remi Jacquemin</h3>
+      <h3>© 2024 Remi Jacquemin</h3>
     </div>
   );
 };

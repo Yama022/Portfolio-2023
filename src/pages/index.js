@@ -16,13 +16,13 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-        <Header />
-        <div className={styles.main}>
+        {/* <Header /> */}
+        {/* <div className={styles.main}> */}
           <About />
         </div>
 
         <Footer />
-      </div>
+      {/* </div> */}
     </>
   );
 }

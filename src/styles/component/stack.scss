@@ -1,0 +1,61 @@
+
+.stack {
+  // background-color: $accent-color-reverse;
+  margin-top: 1rem;
+  overflow: hidden;
+  padding: 2.5rem;
+
+  &__slider {
+    display: flex;
+    animation: marquee 10s linear infinite;
+  }
+
+  /* Classe ajoutée dynamiquement pour stopper l'animation */
+  &__slider.paused {
+    animation-play-state: paused; /* Stoppe l'animation lorsque l'état paused est vrai */
+  }
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__list__icons {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    margin-left: 2.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  &__list__name {
+    position: absolute;
+    bottom: -1.5em;
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__list__icons:hover .stack__list__name {
+    opacity: 1;
+  }
+}
+
+/* Animation marquee pour le défilement horizontal */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

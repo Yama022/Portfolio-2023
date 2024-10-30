@@ -1,12 +1,12 @@
 .about {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #FAF8FF;
-  
+  background-color: #0A0A0A;
+
   &__title {
     align-self: center;
     text-transform: uppercase;
@@ -22,7 +22,7 @@
     align-self: center;
     font-size: 1.2rem;
     font-weight: 200;
-    color: black;
+    color: white;
     font-size: 2em;
     margin: 0;
     text-align: left;
@@ -33,6 +33,21 @@
     width: 30%;
     margin: 0 auto;
     margin-top: 5rem;
+  }
+
+  &__stack {
+    // border: 1px solid #2B2B2B;
+    margin: 0 auto;
+    margin-top: 7%;
+    width: 50%;
+
+    h4 {
+      font-size: 2rem;
+      color: $accent-color;
+      margin: 0;
+      padding: 2rem;
+      color: $accent-color;
+    }
   }
 
   &__arrow {
@@ -58,3 +73,4 @@
     }
   }
 }
+
